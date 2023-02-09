@@ -3,16 +3,17 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+   <script src="https://kit.fontawesome.com/16810e6ebd.js" crossorigin="anonymous"></script>
+   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+   <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="/styles/index.css">
-   <title>Otonye Hillary Edwin</title>
+   <title>Otonye Edwin | Frontend dev</title>
 </head>
 <body>
    <header class="flex col justify-between">
-
       <nav class="nav h-screen-1 w-8 flex justify-between">
          <div class="nav_title flex">
             <img src="/assets/new-logo-removebg-preview.png" alt="" class="nav_title-logo">
@@ -21,10 +22,34 @@
                <h4>FRONTEND DEVELOPER</h4>               
             </div>
          </div>
-         <div class="nav_links flex row w-2">
+         <div class="nav_links flex row">
             <ul class="w-10 flex row justify-between">
-               <li><a href="">projects</a></li>
-               <li><a href="">contact</a></li>
+               <li class="flex col justify-center active">                 
+                  <span style="margin: auto;">
+                     <!-- <i class="fa-solid fa-home" style="color : #c5c5c5; font-size: 1.3rem; margin: .2rem auto;"> -->
+                     </i>
+                  </span>
+                  <a href="./index.html">
+                     Home
+                  </a>
+               </li>
+               <li class="flex col justify-center">                 
+                  <span style="margin: auto;">
+                     <!-- <i class="fa-solid fa-folder" style="color : #c5c5c5; font-size: 1.3rem; margin: .2rem auto;"> -->
+                     </i>
+                  </span>
+                  <a href="">
+                     Projects
+                  </a>
+               </li>
+               <li class="flex col justify-center">
+                  <span style="margin: auto;">
+                     <!-- <i class="fa-solid fa-address-book" style="color : #c5c5c5; font-size: 1.3rem; margin: .2rem auto;"></i> -->
+                  </span>
+                  <a href="">
+                     Contact
+                  </a>
+               </li>
             </ul>
          </div>
       </nav>
@@ -32,37 +57,193 @@
       <div class="hero flex row h-screen-9 w-10">
          <div class="hero_text-bg absolute">
             <h1>Developer</h1>
-         </div>
+         </div><strong></strong>
          <div class="hero_intro flex col w-4">
             <h2>OTONYE EDWIN</h2>
             <h1>Frontend web developer</h1>
-            <p>As a frontend developer, I have experience working with libraries and frameworks such as React/Next JS, Sass/Scss, Tailwind CSS, Git. I also Have experience working with several backend technologies including Node/Express js, EJS view engine, PostgreSQL, MongoDB and Firebase.</p>
+            <p>As a frontend developer, I have experience working with libraries and frameworks such as <strong>React/Next JS</strong>, <strong>Sass/Scss</strong>, <strong>Tailwind CSS</strong>, <strong>Git/Github</strong>. I also Have experience working with several backend technologies including <strong>Node/Express js</strong>, <strong>EJS view engine</strong>, <strong>PostgreSQL</strong>, <strong>MongoDB</strong> and <strong>Firebase</strong>.</p>
             <div class="hero_intro-call-to-action">
-               <a href="">My resume &DownArrow;</a>
-               <a href="">Contact me &rarr;</a>
+               <a href="" class="button-primary">My resume &DownArrow;</a>
+               <a href="" class="button-secondary">Contact me &rarr;</a>
             </div>
          </div>
          <div class="hero_image w-5">
             <img src="/assets/hero-image.png" alt="">
          </div>         
       </div>
-
    </header>
-   <section class="about">
-      <nav class="navbar"></nav>
+
+   <section class="about flex relative">
       <div class="intro">
-         <div class="description"></div>
-         <div class="image">
-            <img src="" alt="" srcset="">
+         <div class="hero flex row h-screen-9 w-10">
+            <div class="hero_text-bg_alt absolute">
+               <h1>About Me</h1>
+            </div>
+            <div class="hero_image w-5">
+               <img src="/assets/music.png" alt="About me">
+            </div>              
+            <div class="hero_intro flex col w-4">
+               <h1>About me</h1>
+               <p>Trailing back to the days I first learned to code in <strong>C</strong> to the latter years where I basically fantasized coding due to my lack of a computer up until a few years back when I decided to become a full fledged programmer, My journey as a developer has been one hell of a rollercoaster. Join me as I take you on a journey of my life as a developer. </p>
+               <div class="hero_intro-call-to-action">
+                  <a href="about.html" class="button-primary">My journey as a dev &rarr;</a>
+               </div>
+            </div>
+       
          </div>
       </div>
    </section>
-   <section class="projects">
+
+   <section class="projects flex col relative">
+      <div class="projects_text-bg absolute">
+         <h1>Projects</h1>
+      </div>
+      <h1>My projects</h1>
+      <div class="projects_tray flex">
+         <div class="projects_tray_card flex col justify-between">
+            <div class="projects_tray_card-image">
+               <img src="./assets/yard.jpeg" alt="">
+            </div>
+            <div class="projects_tray_card-hero flex col justify-between">
+               <div class="projects_tray_card-desc flex col tc">
+                  <h2>Yard <ongoing> </h2>
+                  <p>A web-hosting service developed by a team of two.</p>
+               </div>
+               <div class="projects_tray_card-btns flex col tc">
+                  <a href="" class="primary">View repo</a>
+                  <a href="" class="secondary">Visit</a>
+               </div>
+            </div>
+         </div>
+
+         <div class="projects_tray_card flex col justify-between">
+            <div class="projects_tray_card-image">
+               <img src="./assets/otidev.jpeg" alt="">
+            </div>
+            <div class="projects_tray_card-hero flex col justify-between">
+               <div class="projects_tray_card-desc flex col tc">
+                  <h2>Oti.dev</h2>
+                  <p>A desktop style portfolio webpage built in vanilla js, html 5, and css 3.</p>
+               </div>
+               <div class="projects_tray_card-btns flex col tc">
+                  <a href="" class="primary">View repo</a>
+                  <a href="" class="secondary">Visit</a>
+               </div>
+            </div>
+         </div>
+         <div class="projects_tray_card flex col justify-between">
+            <div class="projects_tray_card-image">
+               <img src="/assets/cbym.jpeg" alt="">
+            </div>
+            <div class="projects_tray_card-hero flex col justify-between">
+               <div class="projects_tray_card-desc flex col tc">
+                  <h2>CBYM</h2>
+                  <p>A news forum webapp built in React JS, Node/Express js, and PostgreSQL.</p>
+               </div>
+               <div class="projects_tray_card-btns flex col tc">
+                  <a href="" class="primary">View repo</a>
+                  <a href="" class="secondary">Visit</a>
+               </div>
+            </div>
+         </div>
+         <div class="projects_tray_card flex col justify-between">
+            <div class="projects_tray_card-image">
+               <img src="./assets/global.jpeg" alt="">
+            </div>
+            <div class="projects_tray_card-hero flex col justify-between">
+               <div class="projects_tray_card-desc flex col tc">
+                  <h2>Global-x credit</h2>
+                  <p>A server-side bank webapp built in vanilla html 5, css 3, node/Express JS together with ejs view engine, and PostgreSQL.</p>
+               </div>
+               <div class="projects_tray_card-btns flex col tc">
+                  <a href="" class="primary">View repo</a>
+                  <a href="" class="secondary">Visit</a>
+               </div>
+            </div>
+         </div>
+         <div class="projects_tray_card flex col justify-between">
+            <div class="projects_tray_card-image">
+               <img src="./assets/android-chrome-512x512.png" alt="Spry">
+            </div>
+            <div class="projects_tray_card-hero flex col justify-between">
+               <div class="projects_tray_card-desc flex col tc">
+                  <h2>Spry anonymous</h2>
+                  <p>A fully functional anonymous messaging webapp built in React JS, Node/Express JS, and PostgreSQL.</p>
+               </div>
+               <div class="projects_tray_card-btns flex col tc">
+                  <a href="" class="primary">View repo</a>
+                  <a href="" class="secondary">Visit</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="contact flex col relative">
+      <div class="contact_text-bg absolute">
+         <h1>Contact</h1>
+      </div>
+      <h1>Contact me</h1>
+      <div class="outer relative">
+         
+         <div class="inner top absolute"></div>
+         <div class="inner bottom absolute"></div>
+
+         <div class="contact_form">
+            <div class="contact_form_pills w-4 flex col justify-between">
+               <div class="contact_form_pills_pill h-4">
+                  <i class="fa-solid fa-envelope" style="color: white; font-size: 1.5rem; margin:.5rem 0"></i>
+                  <h2>Email</h2>
+                  <h1>otiedwin40@gmail.com</h1>
+               </div>
+               <div class="contact_form_pills_pill h-4">
+                  <i class="fa-solid fa-phone" style="color: white; font-size: 1.5rem; margin:.5rem 0"></i>
+                  <h2>Phone</h2>
+                  <h1>+234 810 598 8585</h1>
+               </div>
+            </div>
+            <div class="contact_form_form w-6 flex col justify-center relative">
+               <form action="" class="flex col justify-center w-10 ">
+                  <h2>&mdash; Contact form</h2>
+                  <div class="contact_form_form-group">
+                     <label for="name">Full Name</label>
+                     <input placeholder="Your name" name="name" type="text">
+                  </div>
+                  <div class="contact_form_form-group">
+                     <label for="email">Email</label>
+                     <input placeholder="Your email" name="email" type="email">
+                  </div>
+                  <div class="contact_form_form-group">
+                     <label for="message">What do you think?</label>
+                     <input placeholder="Any thoughs?" name="message" type="textarea" class="message">
+                  </div>
+                  <button type="submit">Send message</button>
+               </form>
+            </div>
+         </div>
+      </div>
 
    </section>
-   <section class="contact">
 
-   </section>
-   <footer></footer>
+   <footer class="footer flex col justify-center">
+      <div class="contacts">
+         <a href="">
+            <i class="fa-brands fa-facebook"></i>
+         </a>
+         <a href="">
+            <i class="fa-brands fa-whatsapp"></i>
+         </a>
+         <a href="">
+            <i class="fa-brands fa-twitter"></i>
+         </a>
+         <a href="">
+            <i class="fa-brands fa-linkedin-in"></i>
+         </a>         
+      </div>   
+      <div class="oti">
+         Otonye hillary edwin
+      </div>
+
+   </footer>
 </body>
 </html>

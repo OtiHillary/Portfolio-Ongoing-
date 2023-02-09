@@ -1,0 +1,210 @@
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="https://kit.fontawesome.com/16810e6ebd.js" crossorigin="anonymous"></script>
+   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+   <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="/styles/index.css">
+   <title>Otonye Edwin | About me</title>
+</head>
+<body>
+   <section class="flex col justify-between">
+      <nav class="nav h-screen-1 w-8 flex justify-between">
+         <div class="nav_title flex">
+            <img src="/assets/new-logo-removebg-preview.png" alt="" class="nav_title-logo">
+            <div class="nav_title-text">
+               <h3>Otonye Edwin</h3>
+               <h4>FRONTEND DEVELOPER</h4>               
+            </div>
+         </div>
+         <div class="nav_links flex row w-2">
+            <ul class="w-10 flex row justify-between">
+               <li>                 
+                  <span style="margin: auto .3rem;">
+                     <!-- <i class="fa-solid fa-folder" style="color : #56c9ff; height: 19px;"> -->
+                     </i>
+                  </span>
+                  <a href="">
+                     Projects
+                  </a>
+               </li>
+               <li>
+                  <span style="margin: auto .5rem;">
+                     <!-- <i class="fa-solid fa-address-book" style="color : #56c9ff; height: 19px;"></i> -->
+                  </span>
+                  <a href="">
+                     Contact
+                  </a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+
+      <div class="hero flex row h-screen-9 w-10 relative">
+         <div class="hero_text-bg absolute">
+            <h1>Genesis
+            </h1>
+         </div>
+         <div class="hero_intro flex col w-6">
+            <h2>2015 &mdash; I learn to code <strong>Javascript</strong></h2>
+            <h1>How it all started</h1>
+            <p>In 2014, after watching a series about how a guy took down the entire FBI from the screen of his laptop, I decided that I was going to be a hacker someday, I didn't have a computer so I sometimes snuck in to use my dad's. One thing led to another and somehow i ended up on <strong>codecademy</strong> where i learned to code javascript. From the little  can recall from that time, My most notable programe was the rock-paper-scissors game which I managed to built from top to bottom.</p>
+            <pre>
+               <code class="">
+<span class="keyword">var</span> user_choice = <span class="built-in">prompt</span>( <span class="string">"Rock, paper or scissors?"</span> );
+<span class="keyword">var</span>  computer_choice = Math.<span class="built-in">random</span>();
+<span class="string"></span>
+
+<span class="keyword">if</span>  (computer_choice < <span class="number">0.34</span>) {
+   computer_choice = <span class="string">"rock"</span>;
+} <span class="keyword">else</span> <span class="keyword">if</span> (computer_choice <= <span class="number">0.67</span>) {
+   computer_choice = <span class="string">"paper"</span>;
+} <span class="keyword">else</span> {
+   computer_choice = <span class="string">"scissors"</span>;
+}
+
+   <span class="keyword">var</span>  compareChoice = <span class="function">function</span>(choice1, choice2) {
+      <span class="keyword">if</span> (choice1 === choice2) {
+         <span class="keyword">return</span><span class="string">"It's a tie!"</span>;
+      }
+
+      <span class="keyword">if</span> (choice1 === <span class="string">"rock"</span>) {
+         <span class="keyword">if</span> (choice2 === <span class="string">"scissors"</span>) {
+            <span class="keyword">return</span> <span class="string">"rock wins"</span> ;
+         } <span class="keyword">else</span> {
+            <span class="keyword">return</span> <span class="string">"paper wins"</span>;
+         }
+      }
+
+      <span class="keyword">if</span> (choice1 === <span class="string">"paper"</span>) {
+
+         <span class="keyword">if</span> (choice2 === <span class="string">"rock"</span>) {
+            <span class="keyword">return</span> <span class="string">"paper wins"</span>;
+         } <span class="keyword">else</span> {
+            <span class="keyword">if</span> (choice2 === <span class="string">"scissors"</span>) {
+               <span class="keyword">return</span> <span class="string">"scissors wins"</span> ;
+            }
+         }
+
+         <span class="keyword">if</span> (choice1 === <span class="string">"scissors"</span>) {
+            <span class="keyword">if</span> (choice2 === <span class="string">"rock"</span>) {
+               <span class="keyword">return</span> <span class="string">"rock wins"</span> ;
+            } <span class="keyword">else</span> {
+               <span class="keyword">if</span> (choice2 === <span class="string">"paper"</span>) {
+                     <span class="keyword">return</span> <span class="string">"scissors wins"</span> ;
+               }
+            }
+         }
+
+      }
+   };  
+console.<span class="built-in">log</span>( <span class="string">"User Choice: "</span> + user_choice );
+console.<span class="built-in">log</span>( <span class="string">"Computer Choice: "</span> + computer_choice );
+<span class="function">compareChoice</span>(user_choice, computer_choice);
+
+               </code>                               
+            </pre>
+
+
+         </div>         
+      </div>
+      <hr>
+      <div class="hero flex row h-screen-9 w-10 relative">
+         <div class="hero_text-bg absolute">
+            <h1>2016</h1>
+         </div><strong></strong>
+         <div class="hero_intro flex col w-6">
+            <h2>2016 &mdash; I learn to code <strong>C</strong></h2>
+            <h1>Trying new things</h1>
+            <p>Being a nigerian developer, Whenever I tell people I spent most of my early days as a dev coding <strong>C/C++</strong>, I'm often looked at with admiration like I had achieved some great feat. Well, as a matter of fact, I spent most of the year 2016 coding <strong>C/C++</strong>. I never worked on any concrete project as I was heavily in lack of resources and support. The most I could do was merely for fun. <br> I came across the <strong>Peter Eastman</strong> C coding challenge entry in 2013 which up until this day amazes me. Anyway, It inspired me to write my somewhat most notable <strong>C</strong> programe which is in the code box below.</p>
+            <pre>
+               <code class="">
+<span class="function">#include</span> <<span class="string">stdio.h</span>> 
+
+<span class="keyword">int</span> <span class="function">main</span> () {
+  <span class="keyword">int</span> n, i, flag = <span class="number">0</span> ;
+  <span class="built-in">printf</span>( <span class="string">"Enter a positive integer: "</span> );
+  <span class="built-in">scanf</span>( <span class="string">"%d"</span>, &n );
+   
+  <span class="keyword">if</span>( n == <span class="number">0</span> || n == <span class="number">1</span> ){
+      flag = <span class="number">1</span>;            
+   }
+
+   <span class="keyword">for</span> ( i = <span class="number">2</span> ; i <=  n / <span class="number">2</span> ; ++i) {       
+     <span class="comment">// if n is divisible by i, then n is not prime</span> 
+     <span class="comment">// change flag to 1 for non-prime number</span> 
+     <span class="keyword">if</span> (n % i == <span class="number">0</span> ) {
+         flag = <span class="number">1</span> ;
+        <span class="keyword">break</span> ;
+      }
+   }
+   
+   <span class="comment">// flag is 0 for prime numbers</span> 
+   <span class="keyword">if</span> (flag == <span class="number">0</span> )
+     <span class="built-in">printf</span>( <span class="string">"%d is a prime number."</span>, n);
+   <span class="keyword">else</span> 
+     <span class="built-in">printf</span>( <spam class="string">"%d is not a prime number."</spam>, n);
+   
+   <span class="keyword">return</span> <span class="number">0</span>;
+}
+               </code>               
+            </pre>
+
+         </div>         
+      </div>
+      <hr>
+      <!-- <div class="hero flex row h-screen-9 w-10 relative">
+         <div class="hero_text-bg absolute">
+            <h1>2020</h1>
+         </div><strong></strong>
+         <div class="hero_intro flex col w-6">
+            <h2>2020 &mdash; back to work</h2>
+            <h1>The tech/smart-contract pandemic</h1>
+            <p>In 2020, The year of the dreaded Covid-19 pandemic, There were two other pandemics, One of which i called the <strong>tech pandemic</strong> and the other which I called the <strong>smart-contract pandemic</strong>. At this point in my life, it seemed as though every single person in nigeria had somehow become either a tech person or a crypto person one way or the other. This drove me back to my destiny as a developer ( <i>Reread but this time imagine trimphant music in the background</i> ). <br> My brother and I built a fully functional pyramid scheme android application using android XML and java. We called it ReferMe. Unfortunately for us, the era of pyramid schemes was coming to a fatal end as most of the big names in the business came crashing down. </p>
+            <div class="hero_intro-call-to-action">
+               <a href="">View Repo &rarr;</a>
+            </div>
+         </div>         
+      </div>
+      <hr>
+      <div class="hero flex row h-screen-9 w-10 relative">
+         <div class="hero_text-bg absolute">
+            <h1>Genesis</h1>
+         </div><strong></strong>
+         <div class="hero_intro flex col w-6">
+            <h2>2021 &mdash; I learn to code Javascript</h2>
+            <h1>How it all started</h1>
+            <p>In 2014, after watching a series about how a guy took down the entire FBI from the screen of his laptop, I decided that I was going to be a hacker someday, I didn't have a computer so I sometimes snuck in to use my dad's. One thing lead to another and somehow i ended up on <strong>codecademy</strong> where i learned to code javascript. From the little  can recall from that time, My most notable programe was the rock-paper-scissors game which I managed to built from top to bottom.</p>
+            <code class="hero_intro-call-to-action">
+               var x = 10; <br>
+               for (x=2; x<10; x++){ <br>
+
+               }
+            </code>
+         </div>         
+      </div>
+      <hr>
+      <div class="hero flex row h-screen-9 w-10 relative">
+         <div class="hero_text-bg absolute">
+            <h1>Genesis</h1>
+         </div><strong></strong>
+         <div class="hero_intro flex col w-6">
+            <h2>2022 &mdash; I learn to code Javascript</h2>
+            <h1>How it all started</h1>
+            <p>In 2014, after watching a series about how a guy took down the entire FBI from the screen of his laptop, I decided that I was going to be a hacker someday, I didn't have a computer so I sometimes snuck in to use my dad's. One thing lead to another and somehow i ended up on <strong>codecademy</strong> where i learned to code javascript. From the little  can recall from that time, My most notable programe was the rock-paper-scissors game which I managed to built from top to bottom.</p>
+            <code class="hero_intro-call-to-action">
+               var x = 10; <br>
+               for (x=2; x<10; x++){ <br>
+
+               }
+            </code>
+         </div>         
+      </div> -->
+   </section>
+</body>
+</html>
