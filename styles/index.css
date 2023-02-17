@@ -680,7 +680,7 @@ a:hover, button:hover {
   .hero img {
     width: 100%;
     filter: drop-shadow(-5px 0px 0px rgba(0, 174, 255, 0.664));
-    height: 18rem;
+    height: 20rem;
   }
   .hero, .about, .projects, .contact {
     flex-wrap: wrap;
