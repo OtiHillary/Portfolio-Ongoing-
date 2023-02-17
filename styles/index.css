@@ -316,6 +316,17 @@ a:hover, button:hover {
   display: flex;
 }
 
+#toggle {
+  position: absolute;
+  width: 50vw;
+  height: 100vh;
+  background-color: white;
+  z-index: 2;
+  box-shadow: -8px 7px 7px rgba(0, 0, 0, 0.1803921569);
+  right: 0;
+  flex-direction: column;
+}
+
 .nav {
   width: 90%;
   margin: auto;
@@ -696,7 +707,7 @@ a:hover, button:hover {
   }
   .hero_intro, .about_intro, .projects_intro, .contact_intro {
     width: 100%;
-    margin: 3rem 0;
+    margin: 5rem 0;
   }
   .hero_intro h1, .about_intro h1, .projects_intro h1, .contact_intro h1 {
     font-size: 2rem;

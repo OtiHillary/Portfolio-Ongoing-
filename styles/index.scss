@@ -311,6 +311,16 @@ a:hover, button:hover{
 .anti-toggle{
    display: flex;
 }
+#toggle{
+   position: absolute;
+   width: 50vw;
+   height: 100vh;
+   background-color: white;
+   z-index: 2;
+   box-shadow: -8px 7px 7px #0000002e;
+   right: 0;
+   flex-direction: column;
+}
 .nav{
    width: 90%;
    margin: auto;
@@ -734,7 +744,7 @@ a:hover, button:hover{
       margin: 1.5rem auto;
       &_intro{
          width: 100%;
-         margin: 3rem 0;
+         margin: 5rem 0;
       }
       &_intro h1{
          font-size: 2rem;
