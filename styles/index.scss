@@ -424,13 +424,18 @@ a:hover, button:hover{
       font-weight: 400;
       margin: 1rem;
    }
+   &_text-bg{
+      position: absolute;
+      left: 0;
+      top: 0;
+   }
    &_text-bg h1{
-      font-size: 10em;
+      font-size: 18em;
+      line-height: 1.1;
       color: white;
       font-weight: 900;
       font-family: 'Monoton', sans-serif;
       filter: drop-shadow(1px 1px 30px rgba(91, 156, 255, 0.178));
-      top: 0%;
    }
    &_text-bg_alt h1{
       font-size: 17                                                                                                              5em;
@@ -694,7 +699,7 @@ a:hover, button:hover{
 
 
 @media (max-width:1060px) {
-   .nav{
+   .nav{ 
       width: 98%;
       min-height: 7vh;
    }              
