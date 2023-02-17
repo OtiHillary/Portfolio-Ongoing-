@@ -22,7 +22,39 @@
                <h4>FRONTEND DEVELOPER</h4>               
             </div>
          </div>
-         <div class="nav_links flex row">
+         <div class="toggle">
+            <i id="toggler" class="fa-solid fa-bars" style="margin:auto 1rem; font-size: 1.5em;"></i>
+
+            <ul id="toggle" style="display:none" class="w-10 flex row justify-between">
+               <li class="flex col justify-center active">                 
+                  <span style="margin: auto;">
+                     <!-- <i class="fa-solid fa-home" style="color : #c5c5c5; font-size: 1.3rem; margin: .2rem auto;"> -->
+                     </i>
+                  </span>
+                  <a href="./index.html">
+                     Home
+                  </a>
+               </li>
+               <li class="flex col justify-center">                 
+                  <span style="margin: auto;">
+                     <!-- <i class="fa-solid fa-folder" style="color : #c5c5c5; font-size: 1.3rem; margin: .2rem auto;"> -->
+                     </i>
+                  </span>
+                  <a href="">
+                     Projects
+                  </a>
+               </li>
+               <li class="flex col justify-center">
+                  <span style="margin: auto;">
+                     <!-- <i class="fa-solid fa-address-book" style="color : #c5c5c5; font-size: 1.3rem; margin: .2rem auto;"></i> -->
+                  </span>
+                  <a href="">
+                     Contact
+                  </a>
+               </li>
+            </ul>        
+         </div>
+         <div class=" anti-toggle nav_links flex row">
             <ul class="w-10 flex row justify-between">
                <li class="flex col justify-center active">                 
                   <span style="margin: auto;">
@@ -58,24 +90,24 @@
          <div class="hero_text-bg absolute">
             <h1>Developer</h1>
          </div><strong></strong>
-         <div class="hero_intro flex col w-4">
+         <div class="hero_intro flex col justify-end w-5">
             <h2>OTONYE EDWIN</h2>
             <h1>Frontend web developer</h1>
             <p>As a frontend developer, I have experience working with libraries and frameworks such as <strong>React/Next JS</strong>, <strong>Sass/Scss</strong>, <strong>Tailwind CSS</strong>, <strong>Git/Github</strong>. I also Have experience working with several backend technologies including <strong>Node/Express js</strong>, <strong>EJS view engine</strong>, <strong>PostgreSQL</strong>, <strong>MongoDB</strong> and <strong>Firebase</strong>.</p>
             <div class="hero_intro-call-to-action">
-               <a href="" class="button-primary">My resume &DownArrow;</a>
-               <a href="" class="button-secondary">Contact me &rarr;</a>
+               <a href="" class="button-primary">Resume &DownArrow;</a>
+               <a href="" class="button-secondary">Contact &rarr;</a>
             </div>
          </div>
          <div class="hero_image w-5">
             <img src="/assets/hero-image.png" alt="">
          </div>         
-      </div>
+      </div> 
    </header>
 
    <section class="about flex relative">
       <div class="intro">
-         <div class="hero flex row h-screen-9 w-10">
+         <div class="about_hero hero flex row h-screen-9 w-10">
             <div class="hero_text-bg_alt absolute">
                <h1>About Me</h1>
             </div>
@@ -245,5 +277,7 @@
       </div>
 
    </footer>
+
+   <script src="./sources/index.js"></script>
 </body>
 </html>

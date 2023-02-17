@@ -32,13 +32,14 @@ pre{
    border-radius: 1rem;
    margin: 0 1rem;
    padding: 1rem;
-   overflow-y: scroll;
+   overflow: scroll;
    height: 10rem;
 }
 
 
 body::-webkit-scrollbar, .scroll::-webkit-scrollbar, pre::-webkit-scrollbar {
    width: .5rem;
+   height: .3rem;
    position: absolute;
    border: 1px solid #d4d4d400;
    background: #c4c3c3bd;
@@ -79,7 +80,7 @@ a:hover, button:hover{
    background-color: black;
    color: white;
    text-decoration: none;
-   padding: 0.8rem 2rem;
+   padding: 0.8rem 3rem;
    width: fit-content;
    border-radius: 0.7rem;
    margin: 0 1rem;
@@ -93,7 +94,7 @@ a:hover, button:hover{
    background-color: rgba(199, 199, 199, 0.26);
    color: black;
    text-decoration: none;
-   padding: 0.8rem 2rem;
+   padding: 0.8rem 3rem;
    width: fit-content;
    border-radius: 0.7rem;
    border: 1.5px solid black;
@@ -142,6 +143,12 @@ a:hover, button:hover{
    }
    &-around{
       justify-content: space-around;
+   }
+   &-end{
+      justify-content: end;
+   }
+   &-start{
+      justify-content: start;
    }
 }
 
@@ -246,39 +253,39 @@ a:hover, button:hover{
    } 
    &-2{
       display: flex;
-      height: 20vh;
+      min-height: 20vh;
    } 
    &-3{
       display: flex;
-      height: 30vh;
+      min-height: 30vh;
    } 
    &-4{
       display: flex;
-      height: 40vh;
+      min-height: 40vh;
    }
    &-5{
       display: flex;
-      height: 50vh;
+      min-height: 50vh;
    }
    &-6{
       display: flex;
-      height: 60vh;
+      min-height: 60vh;
    }
    &-7{
       display: flex;
-      height: 70vh;
+      min-height: 70vh;
    } 
    &-8{
       display: flex;
-      height: 80vh;
+      min-height: 80vh;
    } 
    &-9{
       display: flex;
-      height: 90vh;
+      min-height: 90vh;
    } 
    &-10{
       display: flex;
-      height: 100vh;
+      min-height: 100vh;
    }   
 }
 
@@ -298,7 +305,12 @@ a:hover, button:hover{
 
 
 //     NAVIGATION BAR   //
-
+.toggle{
+   display: none;
+}
+.anti-toggle{
+   display: flex;
+}
 .nav{
    width: 90%;
    margin: auto;
@@ -366,13 +378,21 @@ a:hover, button:hover{
 
 
 .hero{
-   overflow-x: hidden;
+   overflow: hidden;
+   position: relative;
+   justify-content: center;   
    &_image{
       z-index: 1;
+      width: 30rem;
+      height: 36rem;
+   }
+   & img{
+      width: 30rem;
       filter: drop-shadow(-5px 0px 0px rgba(0, 174, 255, 0.664));
+      height: 36rem;
    }
    &_intro{
-      margin: auto auto 5rem auto;
+      margin: 0 0 3rem 0;
       z-index: 1;
 
       &-call-to-action{
@@ -380,22 +400,6 @@ a:hover, button:hover{
          margin: 1.5rem 0;
          padding: 1rem 0;
          display: flex;
-         
-
-         & a{
-            // display: flex;
-            // background-color: black;
-            // color: white;
-            // text-decoration: none;
-            // padding: 0.8rem 2rem;
-            // width: fit-content;
-            // border-radius: 0.7rem;
-            // margin: 0 1rem;
-            // outline: 3px solid rgba(0, 0, 255, 0);
-            // box-shadow: 5px 5px 0px rgb(128 128 128 / 46%);
-            // outline-offset: 1px;
-            // transition: all 0.2s;
-         }
 
          & a:hover {
             outline: 3px solid rgb(28 174 245);
@@ -411,7 +415,7 @@ a:hover, button:hover{
    &_intro h2{
       font-weight: 500;
       font-size: .8rem;
-      margin: 0 1rem;
+      margin: 0.3rem 1rem;
       letter-spacing: .2rem;
       text-transform: uppercase;
    }
@@ -420,16 +424,16 @@ a:hover, button:hover{
       font-weight: 400;
       margin: 1rem;
    }
-   &_text-bg{
-      font-size: 10rem;
+   &_text-bg h1{
+      font-size: 10em;
       color: white;
       font-weight: 900;
       font-family: 'Monoton', sans-serif;
       filter: drop-shadow(1px 1px 30px rgba(91, 156, 255, 0.178));
       top: 0%;
    }
-   &_text-bg_alt{
-      font-size: 17rem;
+   &_text-bg_alt h1{
+      font-size: 17                                                                                                              5em;
       color: white;
       font-weight: 900;
       font-family: 'Monoton', sans-serif;
@@ -454,7 +458,7 @@ a:hover, button:hover{
       margin: 1rem 0;
    }
    &_text-bg, &_text-bg h1{
-      font-size: 20rem;
+      font-size: 20em;
       z-index: -1;
       color: white;
       font-weight: 900;
@@ -477,6 +481,7 @@ a:hover, button:hover{
          border-radius: 1rem;
          border: 1px solid rgba(128, 128, 128, 0.575);
          box-shadow: 6px 5px 0px #add8e67d;
+         
 
       }
       &_card-image{
@@ -544,7 +549,7 @@ a:hover, button:hover{
       margin: 1rem 0;
    }
    &_text-bg, &_text-bg h1{
-      font-size: 20rem;
+      font-size: 20em;
       z-index: -1;
       color: white;
       font-weight: 900;
@@ -683,4 +688,121 @@ a:hover, button:hover{
 }
 .bottom{
    bottom: -15px;
+}
+
+
+
+
+@media (max-width:1060px) {
+   .nav{
+      width: 98%;
+      min-height: 7vh;
+   }              
+   .toggle{
+      display: flex;
+   }
+   .anti-toggle{
+      display: none;
+   }
+   .hero_image{
+      border: 10px solid;
+      z-index: 1;
+      width: 15rem;
+      overflow-y: hidden;
+      border-radius: 100%;
+      height: 15rem;
+   }
+   .hero_intro-call-to-action {
+      margin: .5rem 0;
+      padding: .5rem 0;
+   }
+   .hero img{
+      width: 100%;
+      filter: drop-shadow(-5px 0px 0px rgba(0, 174, 255, 0.664));
+      height: 18rem;
+   }
+
+   .hero, .about, .projects, .contact{
+      flex-wrap: wrap;
+      width:100%;
+      margin: 1.5rem auto;
+      &_intro{
+         width: 100%;
+      }
+      &_intro h1{
+         font-size: 2rem;
+         margin: 0 1rem;
+      }
+      &_intro h2{
+         font-size: .6rem;
+      }
+   }
+   .top, .bottom{
+      display: none;
+   }
+   .contact{
+      box-shadow: 0px 0px 0px;
+   }
+   .contact_form{
+      background-color: transparent;
+      width: 100%;
+      border: 0px;
+
+      & button{
+         width: 95%;
+      }
+
+      &_pills{
+         display: none;
+      }
+
+     &_form {
+         background-color: transparent;
+         width: 100%;
+         &-group label, &-group input, &-group input.message{
+            width: 95%;
+         }
+      }      
+   }
+
+   .hero{
+      flex-wrap: wrap-reverse;
+   } 
+   .about_hero{
+      flex-wrap: wrap;
+   }
+   .projects h1, .contact h1{
+      font-size: 2rem;
+      margin-left: 1rem;
+      text-align: left;
+   }
+   .projects_text-bg, .projects_text-bg h1, .contact_text-bg h1 {
+      font-size: 20rem;
+   }
+   .projects_tray {
+      height: fit-content;
+      padding: 3rem 0;
+      width: 100vw;
+      overflow-x: scroll;
+      margin: auto;
+   }   
+
+   a{
+      font-size: .8rem;
+   }
+   pre{
+      margin: 1.5rem 1rem;
+      height: 15rem;
+   }
+}
+
+@media (max-width: 400px) {
+   *{
+      font-size: 14px;
+   }
+}
+@media (max-width:300px) {
+   *{
+      font-size: 11px;
+   }   
 }

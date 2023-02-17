@@ -33,12 +33,13 @@ pre {
   border-radius: 1rem;
   margin: 0 1rem;
   padding: 1rem;
-  overflow-y: scroll;
+  overflow: scroll;
   height: 10rem;
 }
 
 body::-webkit-scrollbar, .scroll::-webkit-scrollbar, pre::-webkit-scrollbar {
   width: 0.5rem;
+  height: 0.3rem;
   position: absolute;
   border: 1px solid rgba(212, 212, 212, 0);
   background: rgba(196, 195, 195, 0.7411764706);
@@ -79,8 +80,7 @@ a:hover, button:hover {
   background-color: black;
   color: white;
   text-decoration: none;
-  padding: 0.8rem 2rem;
-  width: -webkit-fit-content;
+  padding: 0.8rem 3rem;
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 0.7rem;
@@ -96,8 +96,7 @@ a:hover, button:hover {
   background-color: rgba(199, 199, 199, 0.26);
   color: black;
   text-decoration: none;
-  padding: 0.8rem 2rem;
-  width: -webkit-fit-content;
+  padding: 0.8rem 3rem;
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 0.7rem;
@@ -162,6 +161,12 @@ a:hover, button:hover {
 }
 .justify-around {
   justify-content: space-around;
+}
+.justify-end {
+  justify-content: end;
+}
+.justify-start {
+  justify-content: start;
 }
 
 .absolute {
@@ -260,39 +265,39 @@ a:hover, button:hover {
 }
 .h-screen-2 {
   display: flex;
-  height: 20vh;
+  min-height: 20vh;
 }
 .h-screen-3 {
   display: flex;
-  height: 30vh;
+  min-height: 30vh;
 }
 .h-screen-4 {
   display: flex;
-  height: 40vh;
+  min-height: 40vh;
 }
 .h-screen-5 {
   display: flex;
-  height: 50vh;
+  min-height: 50vh;
 }
 .h-screen-6 {
   display: flex;
-  height: 60vh;
+  min-height: 60vh;
 }
 .h-screen-7 {
   display: flex;
-  height: 70vh;
+  min-height: 70vh;
 }
 .h-screen-8 {
   display: flex;
-  height: 80vh;
+  min-height: 80vh;
 }
 .h-screen-9 {
   display: flex;
-  height: 90vh;
+  min-height: 90vh;
 }
 .h-screen-10 {
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .m-a {
@@ -301,6 +306,14 @@ a:hover, button:hover {
 
 .none {
   display: none !important;
+}
+
+.toggle {
+  display: none;
+}
+
+.anti-toggle {
+  display: flex;
 }
 
 .nav {
@@ -332,7 +345,6 @@ a:hover, button:hover {
 .nav_links li {
   margin: auto;
   padding: 2rem;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
 }
@@ -354,18 +366,25 @@ a:hover, button:hover {
 }
 
 .hero {
-  overflow-x: hidden;
+  overflow: hidden;
+  position: relative;
+  justify-content: center;
 }
 .hero_image {
   z-index: 1;
+  width: 30rem;
+  height: 36rem;
+}
+.hero img {
+  width: 30rem;
   filter: drop-shadow(-5px 0px 0px rgba(0, 174, 255, 0.664));
+  height: 36rem;
 }
 .hero_intro {
-  margin: auto auto 5rem auto;
+  margin: 0 0 3rem 0;
   z-index: 1;
 }
 .hero_intro-call-to-action {
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   margin: 1.5rem 0;
@@ -384,7 +403,7 @@ a:hover, button:hover {
 .hero_intro h2 {
   font-weight: 500;
   font-size: 0.8rem;
-  margin: 0 1rem;
+  margin: 0.3rem 1rem;
   letter-spacing: 0.2rem;
   text-transform: uppercase;
 }
@@ -393,16 +412,16 @@ a:hover, button:hover {
   font-weight: 400;
   margin: 1rem;
 }
-.hero_text-bg {
-  font-size: 10rem;
+.hero_text-bg h1 {
+  font-size: 10em;
   color: white;
   font-weight: 900;
   font-family: "Monoton", sans-serif;
   filter: drop-shadow(1px 1px 30px rgba(91, 156, 255, 0.178));
   top: 0%;
 }
-.hero_text-bg_alt {
-  font-size: 17rem;
+.hero_text-bg_alt h1 {
+  font-size: 17 5em;
   color: white;
   font-weight: 900;
   font-family: "Monoton", sans-serif;
@@ -420,7 +439,7 @@ a:hover, button:hover {
   margin: 1rem 0;
 }
 .projects_text-bg, .projects_text-bg h1 {
-  font-size: 20rem;
+  font-size: 20em;
   z-index: -1;
   color: white;
   font-weight: 900;
@@ -501,7 +520,7 @@ a:hover, button:hover {
   margin: 1rem 0;
 }
 .contact_text-bg, .contact_text-bg h1 {
-  font-size: 20rem;
+  font-size: 20em;
   z-index: -1;
   color: white;
   font-weight: 900;
@@ -633,4 +652,112 @@ a:hover, button:hover {
 
 .bottom {
   bottom: -15px;
+}
+
+@media (max-width: 1060px) {
+  .nav {
+    width: 98%;
+    min-height: 7vh;
+  }
+  .toggle {
+    display: flex;
+  }
+  .anti-toggle {
+    display: none;
+  }
+  .hero_image {
+    border: 10px solid;
+    z-index: 1;
+    width: 15rem;
+    overflow-y: hidden;
+    border-radius: 100%;
+    height: 15rem;
+  }
+  .hero_intro-call-to-action {
+    margin: 0.5rem 0;
+    padding: 0.5rem 0;
+  }
+  .hero img {
+    width: 100%;
+    filter: drop-shadow(-5px 0px 0px rgba(0, 174, 255, 0.664));
+    height: 18rem;
+  }
+  .hero, .about, .projects, .contact {
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 1.5rem auto;
+  }
+  .hero_intro, .about_intro, .projects_intro, .contact_intro {
+    width: 100%;
+  }
+  .hero_intro h1, .about_intro h1, .projects_intro h1, .contact_intro h1 {
+    font-size: 2rem;
+    margin: 0 1rem;
+  }
+  .hero_intro h2, .about_intro h2, .projects_intro h2, .contact_intro h2 {
+    font-size: 0.6rem;
+  }
+  .top, .bottom {
+    display: none;
+  }
+  .contact {
+    box-shadow: 0px 0px 0px;
+  }
+  .contact_form {
+    background-color: transparent;
+    width: 100%;
+    border: 0px;
+  }
+  .contact_form button {
+    width: 95%;
+  }
+  .contact_form_pills {
+    display: none;
+  }
+  .contact_form_form {
+    background-color: transparent;
+    width: 100%;
+  }
+  .contact_form_form-group label, .contact_form_form-group input, .contact_form_form-group input.message {
+    width: 95%;
+  }
+  .hero {
+    flex-wrap: wrap-reverse;
+  }
+  .about_hero {
+    flex-wrap: wrap;
+  }
+  .projects h1, .contact h1 {
+    font-size: 2rem;
+    margin-left: 1rem;
+    text-align: left;
+  }
+  .projects_text-bg, .projects_text-bg h1, .contact_text-bg h1 {
+    font-size: 20rem;
+  }
+  .projects_tray {
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 3rem 0;
+    width: 100vw;
+    overflow-x: scroll;
+    margin: auto;
+  }
+  a {
+    font-size: 0.8rem;
+  }
+  pre {
+    margin: 1.5rem 1rem;
+    height: 15rem;
+  }
+}
+@media (max-width: 400px) {
+  * {
+    font-size: 14px;
+  }
+}
+@media (max-width: 300px) {
+  * {
+    font-size: 11px;
+  }
 }/*# sourceMappingURL=index.css.map */
