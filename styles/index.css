@@ -690,10 +690,13 @@ a:hover, button:hover {
   .hero, .about, .projects, .contact {
     flex-wrap: wrap;
     width: 100%;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
     margin: 1.5rem auto;
   }
   .hero_intro, .about_intro, .projects_intro, .contact_intro {
     width: 100%;
+    margin: 3rem 0;
   }
   .hero_intro h1, .about_intro h1, .projects_intro h1, .contact_intro h1 {
     font-size: 2rem;

@@ -730,9 +730,11 @@ a:hover, button:hover{
    .hero, .about, .projects, .contact{
       flex-wrap: wrap;
       width:100%;
+      min-height: fit-content;
       margin: 1.5rem auto;
       &_intro{
          width: 100%;
+         margin: 3rem 0;
       }
       &_intro h1{
          font-size: 2rem;
