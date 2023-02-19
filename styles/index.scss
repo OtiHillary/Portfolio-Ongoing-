@@ -318,8 +318,26 @@ a:hover, button:hover{
    background-color: white;
    z-index: 2;
    box-shadow: -8px 7px 7px #0000002e;
+   display: flex;
+   justify-content: center;
+   text-align: center;
    right: 0;
-   flex-direction: column
+   flex-direction: column;
+
+   & a{
+      color: black;
+      font-size: 1.3rem;
+      text-decoration: none;
+      border: 1px solid rgba(0, 0, 0, 0);
+      transition: all .2s;
+      margin: .2rem auto;
+      border-radius: 5px;
+      width: 70%;
+
+      &:hover{
+         border: 1px solid black;
+      }
+   }
 }
 .nav{
    width: 100%;
@@ -404,7 +422,7 @@ a:hover, button:hover{
       height: 36rem;
    }
    &_intro{
-      margin: 0 0 3rem 0;
+      margin: 3rem 0;
       z-index: 1;
 
       &-call-to-action{
@@ -450,7 +468,7 @@ a:hover, button:hover{
       filter: drop-shadow(1px 1px 30px rgba(91, 156, 255, 0.178));
    }
    &_text-bg_alt h1{
-      font-size: 17                                                                                                              5em;
+      font-size: 17.5rem;
       color: white;
       font-weight: 900;
       font-family: 'Monoton', sans-serif;
@@ -491,10 +509,11 @@ a:hover, button:hover{
       margin: auto;
 
       &_card{
-         height: 30em;
+         height: 32em;
          background: white;
          margin: auto 1.5rem;
-         min-width: 22em; 
+         min-width: 24em; 
+         max-width: 25em; 
          border-radius: 1rem;
          border: 1px solid rgba(128, 128, 128, 0.575);
          box-shadow: 6px 5px 0px #add8e67d;
@@ -520,7 +539,7 @@ a:hover, button:hover{
          }
       }
       &_card-hero{
-         height: 15em;
+         height: 20em;
          width: 90%;
          margin : 1rem auto;
       }
@@ -751,7 +770,7 @@ a:hover, button:hover{
       margin: 1.5rem auto;
       &_intro{
          width: 100%;
-         margin: 5rem 0;
+         margin: 1.2rem 0;
       }
       &_intro h1{
          font-size: 2rem;
