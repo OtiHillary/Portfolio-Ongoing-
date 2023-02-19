@@ -322,8 +322,10 @@ a:hover, button:hover{
    flex-direction: column
 }
 .nav{
-   width: 90%;
+   width: 100%;
+   padding: 0 .1rem;
    margin: auto;
+   box-shadow: 0.1px 0.1px 19px #8080801c;
 
    &_title{
       &-logo{
@@ -387,7 +389,7 @@ a:hover, button:hover{
 // MAIN SECTION //
 
 
-.hero{
+.hero, .content{
    overflow: hidden;
    position: relative;
    justify-content: center;   
@@ -496,7 +498,7 @@ a:hover, button:hover{
          border-radius: 1rem;
          border: 1px solid rgba(128, 128, 128, 0.575);
          box-shadow: 6px 5px 0px #add8e67d;
-      & h1{
+      & h2{
          font-size: 1.1rem;
          text-transform: capitalize;
          font-weight: 900;
@@ -528,7 +530,7 @@ a:hover, button:hover{
          text-decoration: none;
          margin: 0.4rem auto;
          background-color: black;
-         padding: 0.5rem 1rem;
+         padding: 0.7rem 1rem;
          border-radius: 0.5rem;
          box-shadow: 5px 5px 0px rgba(128, 128, 128, 0.459);
          transition: all .2s;
@@ -540,7 +542,7 @@ a:hover, button:hover{
          margin: 0.4rem auto;
          background-color: rgba(228, 228, 228, 0.842);
          border: 1px solid black;
-         padding: 0.5rem 1rem;
+         padding: 0.7rem 1rem;
          border-radius: 0.5rem;
          box-shadow: 5px 5px 0px rgba(128, 128, 128, 0.459);
          transition: all .2s;
@@ -742,7 +744,7 @@ a:hover, button:hover{
       height: 20rem;
    }
 
-   .hero, .about, .projects, .contact{
+   .hero, .about, .projects, .contact, .content{
       flex-wrap: wrap;
       width:100%;
       min-height: fit-content;
@@ -755,9 +757,15 @@ a:hover, button:hover{
          font-size: 2rem;
          margin: 0 1rem;
       }
-      &_intro h2, &_intro strong{
+      &_intro h2{
          font-size: .6rem;
       }
+   }
+   .content_intro h2 strong{
+      font-size: .6rem;
+   }
+   .projects_tray_card h2{
+      font-size: 1.1rem;
    }
    .top, .bottom{
       display: none;

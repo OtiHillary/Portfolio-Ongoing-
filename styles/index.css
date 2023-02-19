@@ -328,8 +328,10 @@ a:hover, button:hover {
 }
 
 .nav {
-  width: 90%;
+  width: 100%;
+  padding: 0 0.1rem;
   margin: auto;
+  box-shadow: 0.1px 0.1px 19px rgba(128, 128, 128, 0.1098039216);
 }
 .nav_title-logo {
   height: 2.5rem;
@@ -376,59 +378,59 @@ a:hover, button:hover {
   color: rgba(0, 174, 255, 0.664);
 }
 
-.hero {
+.hero, .content {
   overflow: hidden;
   position: relative;
   justify-content: center;
 }
-.hero_image {
+.hero_image, .content_image {
   z-index: 1;
   width: 30rem;
   height: 36rem;
 }
-.hero img {
+.hero img, .content img {
   width: 30rem;
   filter: drop-shadow(-5px 0px 0px rgba(0, 174, 255, 0.664));
   height: 36rem;
 }
-.hero_intro {
+.hero_intro, .content_intro {
   margin: 0 0 3rem 0;
   z-index: 1;
 }
-.hero_intro-call-to-action {
+.hero_intro-call-to-action, .content_intro-call-to-action {
   height: -moz-fit-content;
   height: fit-content;
   margin: 1.5rem 0;
   padding: 1rem 0;
   display: flex;
 }
-.hero_intro-call-to-action a:hover {
+.hero_intro-call-to-action a:hover, .content_intro-call-to-action a:hover {
   outline: 3px solid rgb(28, 174, 245);
   transform: scale(1.01);
 }
-.hero_intro h1 {
+.hero_intro h1, .content_intro h1 {
   font-weight: 900;
   font-size: 3.5rem;
   margin: 1rem;
 }
-.hero_intro h2 {
+.hero_intro h2, .content_intro h2 {
   font-weight: 500;
   font-size: 0.8rem;
   margin: 0.3rem 1rem;
   letter-spacing: 0.2rem;
   text-transform: uppercase;
 }
-.hero_intro p {
+.hero_intro p, .content_intro p {
   font-size: 0.9rem;
   font-weight: 400;
   margin: 1rem;
 }
-.hero_text-bg {
+.hero_text-bg, .content_text-bg {
   position: absolute;
   left: 0;
   top: 0;
 }
-.hero_text-bg h1 {
+.hero_text-bg h1, .content_text-bg h1 {
   font-size: 18em;
   line-height: 1.7;
   color: white;
@@ -436,7 +438,7 @@ a:hover, button:hover {
   font-family: "Monoton", sans-serif;
   filter: drop-shadow(1px 1px 30px rgba(91, 156, 255, 0.178));
 }
-.hero_text-bg_alt h1 {
+.hero_text-bg_alt h1, .content_text-bg_alt h1 {
   font-size: 17 5em;
   color: white;
   font-weight: 900;
@@ -479,7 +481,7 @@ a:hover, button:hover {
   border: 1px solid rgba(128, 128, 128, 0.575);
   box-shadow: 6px 5px 0px rgba(173, 216, 230, 0.4901960784);
 }
-.projects_tray_card h1 {
+.projects_tray_card h2 {
   font-size: 1.1rem;
   text-transform: capitalize;
   font-weight: 900;
@@ -508,7 +510,7 @@ a:hover, button:hover {
   text-decoration: none;
   margin: 0.4rem auto;
   background-color: black;
-  padding: 0.5rem 1rem;
+  padding: 0.7rem 1rem;
   border-radius: 0.5rem;
   box-shadow: 5px 5px 0px rgba(128, 128, 128, 0.459);
   transition: all 0.2s;
@@ -520,7 +522,7 @@ a:hover, button:hover {
   margin: 0.4rem auto;
   background-color: rgba(228, 228, 228, 0.842);
   border: 1px solid black;
-  padding: 0.5rem 1rem;
+  padding: 0.7rem 1rem;
   border-radius: 0.5rem;
   box-shadow: 5px 5px 0px rgba(128, 128, 128, 0.459);
   transition: all 0.2s;
@@ -704,23 +706,29 @@ a:hover, button:hover {
     filter: drop-shadow(-5px 0px 0px rgba(0, 174, 255, 0.664));
     height: 20rem;
   }
-  .hero, .about, .projects, .contact {
+  .hero, .about, .projects, .contact, .content {
     flex-wrap: wrap;
     width: 100%;
     min-height: -moz-fit-content;
     min-height: fit-content;
     margin: 1.5rem auto;
   }
-  .hero_intro, .about_intro, .projects_intro, .contact_intro {
+  .hero_intro, .about_intro, .projects_intro, .contact_intro, .content_intro {
     width: 100%;
     margin: 5rem 0;
   }
-  .hero_intro h1, .about_intro h1, .projects_intro h1, .contact_intro h1 {
+  .hero_intro h1, .about_intro h1, .projects_intro h1, .contact_intro h1, .content_intro h1 {
     font-size: 2rem;
     margin: 0 1rem;
   }
-  .hero_intro h2, .hero_intro strong, .about_intro h2, .about_intro strong, .projects_intro h2, .projects_intro strong, .contact_intro h2, .contact_intro strong {
+  .hero_intro h2, .about_intro h2, .projects_intro h2, .contact_intro h2, .content_intro h2 {
     font-size: 0.6rem;
+  }
+  .content_intro h2 strong {
+    font-size: 0.6rem;
+  }
+  .projects_tray_card h2 {
+    font-size: 1.1rem;
   }
   .top, .bottom {
     display: none;
