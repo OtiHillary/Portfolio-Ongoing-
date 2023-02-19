@@ -1,4 +1,5 @@
 var toggler = document.getElementById('toggler')
+var ex = document.getElementById('ex')
 
 function toggle(){
    var toggled = document.getElementById('toggle').style.display
@@ -13,3 +14,4 @@ function toggle(){
    }
 }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
 toggler.addEventListener('click', toggle)          
+ex.addEventListener('click', toggle)

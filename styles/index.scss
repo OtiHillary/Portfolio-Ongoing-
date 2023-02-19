@@ -312,8 +312,8 @@ a:hover, button:hover{
    display: flex;
 }
 #toggle{
-   position: absolute;
-   width: 50vw;
+   position: fixed;
+   width: 60vw;
    height: 100vh;
    background-color: white;
    z-index: 2;
@@ -323,7 +323,21 @@ a:hover, button:hover{
    text-align: center;
    right: 0;
    flex-direction: column;
+   .ex{
+      font-size: 2.5rem;
+      margin: .5rem;
+      background: #d3d3d338;
+      top: 0;
+      right: 0;
+      padding: 0 .813rem;
+      border-radius: 50%;
+      transition: all .2s;
 
+      &:hover, &:active{
+         background-color: rgba(255, 0, 0, 0.164);
+         color: rgb(153, 6, 6);
+      }
+   }
    & a{
       color: black;
       font-size: 1.3rem;
