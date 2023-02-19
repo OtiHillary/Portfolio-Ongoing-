@@ -319,7 +319,7 @@ a:hover, button:hover{
    z-index: 2;
    box-shadow: -8px 7px 7px #0000002e;
    right: 0;
-   flex-direction: column;
+   flex-direction: column
 }
 .nav{
    width: 90%;
@@ -441,7 +441,7 @@ a:hover, button:hover{
    }
    &_text-bg h1{
       font-size: 18em;
-      line-height: 1.1;
+      line-height: 1.7;
       color: white;
       font-weight: 900;
       font-family: 'Monoton', sans-serif;
@@ -750,7 +750,7 @@ a:hover, button:hover{
          font-size: 2rem;
          margin: 0 1rem;
       }
-      &_intro h2{
+      &_intro h2, &_intro strong{
          font-size: .6rem;
       }
    }

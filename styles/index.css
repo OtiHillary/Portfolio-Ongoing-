@@ -430,7 +430,7 @@ a:hover, button:hover {
 }
 .hero_text-bg h1 {
   font-size: 18em;
-  line-height: 1.1;
+  line-height: 1.7;
   color: white;
   font-weight: 900;
   font-family: "Monoton", sans-serif;
@@ -713,7 +713,7 @@ a:hover, button:hover {
     font-size: 2rem;
     margin: 0 1rem;
   }
-  .hero_intro h2, .about_intro h2, .projects_intro h2, .contact_intro h2 {
+  .hero_intro h2, .hero_intro strong, .about_intro h2, .about_intro strong, .projects_intro h2, .projects_intro strong, .contact_intro h2, .contact_intro strong {
     font-size: 0.6rem;
   }
   .top, .bottom {
