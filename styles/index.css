@@ -740,8 +740,6 @@ a:hover, button:hover {
   .hero, .about, .projects, .contact, .content {
     flex-wrap: wrap;
     width: 100%;
-    min-height: -moz-fit-content;
-    min-height: fit-content;
     margin: 1.5rem auto;
   }
   .hero_intro, .about_intro, .projects_intro, .contact_intro, .content_intro {
