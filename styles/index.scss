@@ -496,7 +496,12 @@ a:hover, button:hover{
          border-radius: 1rem;
          border: 1px solid rgba(128, 128, 128, 0.575);
          box-shadow: 6px 5px 0px #add8e67d;
-         
+      & h1{
+         font-size: 1.1rem;
+         text-transform: capitalize;
+         font-weight: 900;
+         letter-spacing: normal;
+      } 
 
       }
       &_card-image{
