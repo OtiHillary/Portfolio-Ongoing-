@@ -530,8 +530,8 @@ a:hover, button:hover{
          height: 32em;
          background: white;
          margin: auto 1.5rem;
-         min-width: 24em; 
-         max-width: 25em; 
+         min-width: 23em; 
+         max-width: 23em; 
          border-radius: 1rem;
          border: 1px solid rgba(128, 128, 128, 0.575);
          box-shadow: 6px 5px 0px #add8e67d;
@@ -720,6 +720,7 @@ a:hover, button:hover{
       text-decoration: none;
    }
 }
+
 .oti{
    color: white;
    text-transform: uppercase;
@@ -784,8 +785,8 @@ a:hover, button:hover{
    .hero, .about, .projects, .contact, .content{
       flex-wrap: wrap;
       width:100%;
-      // min-height: fit-content;
-      margin: 1.5rem auto;
+      margin: 0.5rem auto;
+
       &_intro{
          width: 100%;
          margin: 1.2rem 0;
