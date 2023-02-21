@@ -315,7 +315,7 @@ a:hover, button:hover{
    position: fixed;
    width: 60vw;
    height: 100vh;
-   background-color: white;
+   background-color: black;
    z-index: 2;
    box-shadow: -8px 7px 7px #0000002e;
    display: flex;
@@ -326,7 +326,7 @@ a:hover, button:hover{
    .ex{
       font-size: 2.5rem;
       margin: .5rem;
-      background: #d3d3d338;
+      background: rgba(255, 255, 255, 0.486);
       top: 0;
       right: 0;
       padding: 0 .813rem;
@@ -339,17 +339,17 @@ a:hover, button:hover{
       }
    }
    & a{
-      color: black;
+      color: white;
       font-size: 1.3rem;
       text-decoration: none;
-      border: 1px solid rgba(0, 0, 0, 0);
+      border: 1px solid transparent;
       transition: all .2s;
       margin: .2rem auto;
       border-radius: 5px;
       width: 70%;
 
       &:hover{
-         border: 1px solid black;
+         border: 1px solid white;
       }
    }
 }

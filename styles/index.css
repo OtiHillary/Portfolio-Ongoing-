@@ -320,7 +320,7 @@ a:hover, button:hover {
   position: fixed;
   width: 60vw;
   height: 100vh;
-  background-color: white;
+  background-color: black;
   z-index: 2;
   box-shadow: -8px 7px 7px rgba(0, 0, 0, 0.1803921569);
   display: flex;
@@ -332,7 +332,7 @@ a:hover, button:hover {
 #toggle .ex {
   font-size: 2.5rem;
   margin: 0.5rem;
-  background: rgba(211, 211, 211, 0.2196078431);
+  background: rgba(255, 255, 255, 0.486);
   top: 0;
   right: 0;
   padding: 0 0.813rem;
@@ -344,17 +344,17 @@ a:hover, button:hover {
   color: rgb(153, 6, 6);
 }
 #toggle a {
-  color: black;
+  color: white;
   font-size: 1.3rem;
   text-decoration: none;
-  border: 1px solid rgba(0, 0, 0, 0);
+  border: 1px solid transparent;
   transition: all 0.2s;
   margin: 0.2rem auto;
   border-radius: 5px;
   width: 70%;
 }
 #toggle a:hover {
-  border: 1px solid black;
+  border: 1px solid white;
 }
 
 .nav {
