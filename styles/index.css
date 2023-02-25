@@ -563,6 +563,15 @@ a:hover, button:hover {
   text-align: center;
 }
 
+.card {
+  height: 28em;
+  min-width: 20em;
+  max-width: 20em;
+}
+.card_img img {
+  width: 120%;
+}
+
 .contact {
   font-size: 13px;
   height: -moz-fit-content;
