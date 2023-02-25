@@ -627,6 +627,7 @@ a:hover, button:hover {
   flex-direction: row;
   height: 100%;
   border: 1px solid rgba(128, 128, 128, 0.548);
+  padding: 1.5rem 0;
 }
 .contact_form_form {
   background-color: white;
