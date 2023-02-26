@@ -660,7 +660,7 @@ a:hover, button:hover{
       height: 100%;
       border: 1px solid rgba(128, 128, 128, 0.548);
       padding: 1.5rem 0;
-      
+
       &_form {
          background-color: white;
          border-left: 1px dashed rgba(128, 128, 128, 0.541);
@@ -764,7 +764,7 @@ a:hover, button:hover{
 
 
 
-@media (max-width:1060px) {
+@media (max-width:960px) {
    .nav{ 
       width: 98%;
       min-height: 7vh;
