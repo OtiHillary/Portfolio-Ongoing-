@@ -254,16 +254,17 @@
                </div>
             </div>
             <div class="contact_form_form w-6 flex col justify-center relative">
-               <form action="MAILTO:otiedwin40@gmail.com" method="post" class="flex col justify-center w-10 ">
+               <form action="https://mailthis.to/Otonyeedwin" method="post" enctype="multipart/form-data" class="flex col justify-center w-10 ">
                   <h2>&mdash; Contact form</h2>
                   <div class="contact_form_form-group">
                      <label for="name">Full Name</label>
                      <input placeholder="Your name" name="name" type="text">
                   </div>
                   <div class="contact_form_form-group">
-                     <label for="email">Email</label>
-                     <input placeholder="Your email" name="email" type="email">
+                     <label for="_replyto">Email</label>
+                     <input placeholder="Your email" name="_replyto" type="email">
                   </div>
+                  <input type="hidden" name="_subject" value="Contact form submitted">
                   <div class="contact_form_form-group">
                      <label for="message">What do you think?</label>
                      <input placeholder="Any thoughts?" name="message" type="textarea" class="message">
