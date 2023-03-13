@@ -415,7 +415,7 @@ a:hover, button:hover {
 }
 .hero_image, .content_image {
   z-index: 1;
-  width: 30rem;
+  width: 28rem;
   height: 36rem;
 }
 .hero img, .content img {
@@ -425,7 +425,7 @@ a:hover, button:hover {
 }
 .hero_intro, .content_intro {
   min-height: 50vh;
-  margin: 3rem 0;
+  margin: auto 0 3rem;
   z-index: 1;
 }
 .hero_intro-call-to-action, .content_intro-call-to-action {
@@ -448,7 +448,7 @@ a:hover, button:hover {
   font-weight: 500;
   font-size: 0.8rem;
   margin: 0.3rem 1rem;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.4rem;
   text-transform: uppercase;
 }
 .hero_intro p, .content_intro p {
@@ -674,6 +674,14 @@ a:hover, button:hover {
   height: 5rem;
   border-radius: 0.5rem;
   width: 80%;
+}
+
+.carousel {
+  margin: auto;
+}
+
+.image-2, .image-2 img {
+  width: 33rem;
 }
 
 .footer {

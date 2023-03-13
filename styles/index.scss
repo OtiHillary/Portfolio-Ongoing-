@@ -427,7 +427,7 @@ a:hover, button:hover{
    justify-content: center;   
    &_image{
       z-index: 1;
-      width: 30rem;
+      width: 28rem;
       height: 36rem;
    }
 
@@ -438,7 +438,7 @@ a:hover, button:hover{
    }
    &_intro{
       min-height: 50vh;
-      margin: 3rem 0;
+      margin: auto 0 3rem;
       z-index: 1;
 
       &-call-to-action{
@@ -456,13 +456,14 @@ a:hover, button:hover{
    &_intro h1{
       font-weight: 900;
       font-size: 3.5rem;
+      // line-height: 1.2em;
       margin: 1rem;
    }
    &_intro h2{
       font-weight: 500;
       font-size: .8rem;
       margin: 0.3rem 1rem;
-      letter-spacing: .2rem;
+      letter-spacing: .4rem;
       text-transform: uppercase;
    }
    &_intro p{
@@ -714,6 +715,13 @@ a:hover, button:hover{
    
 }
 
+.carousel{
+   margin: auto;
+}
+.image-2, .image-2 img{
+   width: 33rem ;
+   // margin: auto;
+}
 
 // FOOTER //
 
