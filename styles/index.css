@@ -452,7 +452,7 @@ header {
 .hero_intro h1, .content_intro h1 {
   font-weight: 900;
   font-size: 3.5rem;
-  margin: 1rem;
+  margin: 0 1rem;
 }
 .hero_intro h2, .content_intro h2 {
   font-weight: 500;
