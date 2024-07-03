@@ -364,7 +364,7 @@ a:hover, button:hover {
   box-shadow: 0.1px 0.1px 19px rgba(128, 128, 128, 0.1098039216);
 }
 .nav .nav__content {
-  width: 80%;
+  width: 90%;
   margin: auto;
 }
 .nav_title-logo {
@@ -871,6 +871,10 @@ header {
   .nav {
     width: 98%;
     min-height: 7vh;
+  }
+  .nav__content {
+    width: 95%;
+    margin: auto;
   }
   .toggle {
     display: flex;
