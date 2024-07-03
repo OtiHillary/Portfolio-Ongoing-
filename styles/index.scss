@@ -4,7 +4,7 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-   overflow-x: hidden;
+   // overflow-x: hidden;
    // border: .1px solid blue;
 }
 section, header{
@@ -388,36 +388,27 @@ a:hover, button:hover{
       min-width: 20%;
       z-index: 1;
       cursor: pointer;
-      // padding: 1rem;
-      // position: fixed;
-      // right: 0%;
-      // background-color: black;
-      // border-radius: 3rem 0;
-      // box-shadow: 4px 4px 0px #b9b6b6;
-      // margin: 1rem 3rem;
-      // overflow: visible;
-      // z-index: 2;
 
       & li{
          margin: auto;
-         padding: 2rem;
-         height: max-content;
+         height: fit-content;
+         overflow: hidden;
       }
-      & li:hover{
-         background-color: rgba(177, 177, 177, 0.137);
-      }
+
       & li:hover a{
          font-weight: 700;
       }
       & a{
          text-decoration: none;
          font-size: .8rem;
+         height: 100%;
          color: black;
+         padding: 2rem;
          cursor: pointer;
          transition: all .2s;
          
          &:hover{
-            color: $primary-color;
+            background: rgba(128, 128, 128, 0.065);
          }
       }
    }
@@ -428,8 +419,6 @@ header{
 }
 
 // MAIN SECTION //
-
-
 .hero, .content{
    overflow: hidden;
    position: relative;
@@ -450,10 +439,14 @@ header{
       min-height: 50vh;
       margin: auto 0 3rem;
       z-index: 1;
+      border: 1px solid #cacacad9;
+      background-color: #aea6a600;
+      padding: 2rem 1rem;
+      border-radius: 15px;
+      backdrop-filter: blur(15px);
 
       &-call-to-action{
          height: fit-content;
-         margin: 1.5rem 0;
          padding: 1rem 0;
          display: flex;
 
@@ -507,19 +500,18 @@ header{
 
 
 // PROJECTS SECTION //
-
-
 .projects{
    font-size: 13px;
+   position: relative;
 
    & h1{
       text-align: center;
       font-weight: 900;
       font-size: 3.5rem;
-      margin: 1rem 0;
+      margin: 3rem 0;
    }
    &_text-bg, &_text-bg h1{
-      font-size: 20em;
+      font-size: 20rem;
       z-index: -1;
       color: white;
       font-weight: 900;
@@ -527,6 +519,142 @@ header{
       filter: drop-shadow(1px 1px 30px rgba(247, 134, 238, 0.205));
       top: -5%;
       left: 15%;
+   }
+   &_tray{
+      width: 100vw;
+      overflow-x: scroll;
+      margin: auto;
+      padding-bottom: 3rem;
+
+      &_card{
+         height: 32em;
+         margin: auto 1.5rem;
+         min-width: 23em; 
+         max-width: 23em; 
+         border-radius: 1rem;
+         border: 1px solid rgba(128, 128, 128, 0.575);
+         background-color: #aea6a600;
+         backdrop-filter: blur(15px);
+         box-shadow: 6px 5px 0px #add8e67d;
+      & h2{
+         font-size: 1.1rem;
+         text-transform: capitalize;
+         font-weight: 900;
+         letter-spacing: normal;
+      } 
+
+      }
+      &_card-image{
+         height: 8em;
+         width: 85%;
+         display: flex;
+         outline-offset: .2rem;
+         outline: 2px solid #7a7a7a;
+         overflow: hidden;
+         border-radius: .5rem;
+         margin: 1rem auto;
+
+         & img{
+            height: 140%;
+            margin: auto;
+         }
+      }
+      &_card-hero{
+         height: 20rem;
+         width: 90%;
+         margin : 1rem auto;
+      }
+      &_card-btns a.secondary{
+         color: white;
+         width: 95%;
+         text-decoration: none;
+         margin: 0.4rem auto;
+         background-color: black;
+         padding: 0.7rem 1rem;
+         border-radius: 0.5rem;
+         box-shadow: 5px 5px 0px rgba(128, 128, 128, 0.459);
+         transition: all .2s;
+      }
+      &_card-btns a.primary{
+         color: black;
+         width: 95%;
+         text-decoration: none;
+         margin: 0.4rem auto;
+         background-color: rgba(228, 228, 228, 0.842);
+         border: 1px solid black;
+         padding: 0.7rem 1rem;
+         border-radius: 0.5rem;
+         box-shadow: 5px 5px 0px rgba(128, 128, 128, 0.459);
+         transition: all .2s;
+      }
+      &_card h1, &_card p{
+         text-align: center;
+      }
+   }
+}
+.card{
+   height: 28em;
+   min-width: 20rem;
+   max-width: 20rem;
+
+   &_img{
+      & img{
+         width: 120%;
+      }
+   }
+}
+
+// Community
+
+.community{
+   font-size: 13px;
+   position: relative;
+
+   &_section-youtube{
+      border: 1px solid #cacacad9;
+      padding: 1rem;
+      border-radius: 15px;
+   }
+
+   &_intro{
+      min-height: 50vh;
+      max-width: 85%;
+      margin: auto 0 3rem;
+      z-index: 1;
+      border: 1px solid #cacacad9;
+      background-color: #aea6a600;
+      padding: 2rem;
+      border-radius: 15px;
+      backdrop-filter: blur(15px);
+      
+      & h2{
+         font-size: 1.1rem;
+         margin: .5rem 0;
+         text-transform: normal;
+         font-weight: 900;
+         letter-spacing: normal;
+      }
+      &call-tp-action {
+         color: black;
+         margin: .5rem 0;
+      }
+   }
+
+   & h1{
+      text-align: center;
+      font-weight: 900;
+      font-size: 3.5rem;
+      margin: 3rem 0;
+   }
+   &_text-bg, &_text-bg h1{
+      font-size: 20rem;
+      z-index: -1;
+      color: white;
+      font-weight: 900;
+      font-family: 'Monoton', sans-serif;
+      filter: drop-shadow(1px 1px 30px rgba(250, 98, 237, 0.205));
+      top: 10%;
+      left: -10%;
    }
    &_tray{
       height: 100vh;
@@ -565,7 +693,7 @@ header{
          }
       }
       &_card-hero{
-         height: 20em;
+         height: 20rem;
          width: 90%;
          margin : 1rem auto;
       }
@@ -597,24 +725,11 @@ header{
       }
    }
 }
-.card{
-   height: 28em;
-   min-width: 20em;
-   max-width: 20em;
-
-   &_img{
-      & img{
-         width: 120%;
-      }
-   }
-}
-
 
 // CONTACT US //
-
-
 .contact{
    font-size: 13px;
+   position: relative;
    height: fit-content;
    padding: 3rem 0;
    box-shadow: 5px 5px 0px rgba(128, 128, 128, 0.459);
@@ -624,10 +739,10 @@ header{
       text-align: center;
       font-weight: 900;
       font-size: 3.5rem;
-      margin: 1rem 0;
+      margin: 3rem 0;
    }
    &_text-bg, &_text-bg h1{
-      font-size: 20em;
+      font-size: 20rem;
       z-index: -1;
       color: white;
       font-weight: 900;
@@ -732,9 +847,12 @@ header{
    // margin: auto;
 }
 
+.video{
+   font-size: .8rem;
+   margin: 1.5rem;
+}
+
 // FOOTER //
-
-
 .footer{
    height: 20vh;
    background-color: black;
@@ -813,7 +931,7 @@ header{
       height: 18rem;
       transform: scale(1.05);
    }
-   .hero, .about, .projects, .contact, .content{
+   .hero, .about, .projects, .contact, .community, .content{
       flex-wrap: wrap;
       width:100%;
       margin: 0.5rem auto;
@@ -821,6 +939,8 @@ header{
       &_intro{
          width: 100%;
          margin: 1.2rem 0;
+         border: 0px;
+         background-color: transparent;
       }
       &_intro h1{
          font-size: 2rem;
@@ -832,6 +952,12 @@ header{
    }
    .content_intro h2 strong{
       font-size: .6rem;
+   }
+   .community_intro {
+      padding: 0;
+   }
+   .community_intro h2 {
+      font-size: 1.1rem;
    }
    .projects_tray_card h2{
       font-size: 1.1rem;
@@ -848,7 +974,7 @@ header{
       border: 0px;
 
       & button{
-         width: 95%;
+         width: 90%;
       }
 
       &_pills{
@@ -858,9 +984,19 @@ header{
      &_form {
          background-color: transparent;
          width: 100%;
-         &-group label, &-group input, &-group input.message{
-            width: 95%;
+
+         & h2 {
+            margin: auto 1.5rem;
          }
+
+         &-group {
+            margin: 0.5rem 1rem;
+
+            & label, & input, & input.message{
+               width: 95%;
+            }            
+        }
+
       }      
    }
 
@@ -870,10 +1006,11 @@ header{
    .about_hero{
       flex-wrap: wrap;
    }
-   .projects h1, .contact h1{
+   .projects h1, .contact h1, .community h1{
       font-size: 2rem;
       margin-left: 1rem;
       text-align: left;
+      margin: .5rem 0 0 1.5rem;
    }
    .projects_text-bg, .projects_text-bg h1, .contact_text-bg h1 {
       font-size: 20rem;
@@ -893,12 +1030,31 @@ header{
       margin: 1.5rem 1rem;
       height: 30rem;
    }
+
+
+}
+
+@media (max-width: 600px){
+   .description{
+      display: none;
+   }
+}
+
+@media (max-width: 500px){
+   .video{
+      flex-direction: column;
+      margin: 1rem;
+   }
+   .meta {
+      margin: 1rem 0;
+   }   
 }
 
 @media (max-width: 400px) {
    *{
       font-size: 14px;
    }
+
 }
 @media (max-width:300px) {
    *{

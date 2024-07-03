@@ -17,31 +17,28 @@
 <body>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
    <script>
-   $(document).ready(function(){
-   // Add smooth scrolling to all links
-   $("a").on('click', function(event) {
+      $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
 
-      // Make sure this.hash has a value before overriding default behavior
-      if (this.hash !== "") {
-         // Prevent default anchor click behavior
-         event.preventDefault();
+         if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
 
-         // Store hash
-         var hash = this.hash;
+            // Store hash
+            var hash = this.hash;
 
-         // Using jQuery's animate() method to add smooth page scroll
-         // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-         $('html, body').animate({
-         scrollTop: $(hash).offset().top
-         }, 1000, function(){
-      
-         // Add hash (#) to URL when done scrolling (default click behavior)
-         window.location.hash = hash;
-         });
-      } // End if
-   });
+            $('html, body').animate({
+            scrollTop: $(hash).offset().top
+            }, 1000, function(){
+         
+            window.location.hash = hash;
+            });
+         } // End if
+      });
    });
    </script>
+   
    <header class="flex col justify-between">
       <nav class="nav">
          <div class="nav__content h-screen-1 w-8 flex justify-between">
@@ -130,7 +127,7 @@
       <div class="intro">
          <div class="about_hero hero flex row h-screen-9 w-10">
             <div class="hero_text-bg_alt absolute">
-               <h1>About Me</h1>
+               <h1>About</h1>
             </div>
             <div class="hero_image image-2 w-5">
                <img src="/assets/music.png" alt="About me" class=" w-33">
@@ -153,6 +150,24 @@
       </div>
       <h1>My projects</h1>
       <div class="projects_tray flex">
+         <div class="projects_tray_card flex col justify-between">
+            <div class="projects_tray_card-image">
+               <img src="./assets/cropperlite.png" alt="" style="margin: auto; margin-top: -15; transform: scale(1.08);">
+            </div>
+            <div class="projects_tray_card-hero flex col justify-between">
+               <div class="projects_tray_card-desc flex col tc">
+                  <h2>Cropperlite</h2>
+                  <p>
+                     An image cropper for profile pictures, cover photos, and many others, written in Javascript.
+                     Cropper-lite is open source software released under the <span><a href="https://discord.gg/bVSmtqUP">forverNewbz commmunity</a></span>.
+                  </p>
+               </div>
+               <div class="projects_tray_card-btns flex col tc">
+                  <a href="https://github.com/OtiHillary/cropper-lite" class="primary">View repo</a>
+                  <a href="https://www.npmjs.com/package/cropper-lite" class="secondary">View NPM</a>
+               </div>
+            </div>
+         </div>
 
          <div class="projects_tray_card flex col justify-between">
             <div class="projects_tray_card-image">
@@ -170,6 +185,7 @@
                </div>
             </div>
          </div>
+
          <div class="projects_tray_card flex col justify-between">
             <div class="projects_tray_card-image">
                <img src="./assets/global.jpeg" alt="">
@@ -249,6 +265,80 @@
       </div>
    </section>
 
+   <section id="community" class="community flex col relative">
+      <h1>Other projects</h1>
+      <div class="community_text-bg absolute">
+         <h1>Community</h1>
+      </div>
+      <div class="row flex justify-center community_section">
+         <div class="community_intro flex col w-6 justify-center">
+            <h2>&mdash; foreverNewbz Community</h2>
+            <p>ForeverNEWBZ is a vibrant tech community that empowers aspiring and professional coders through collaboration, knowledge sharing, and growth. Whether you're a seasoned developer or just starting out, ForeverNEWBZ provides a collaborative space to connect with fellow coders from around the world, share knowledge, tackle challenges together, and get inspired by your peers. They also offer a range of benefits to help you develop your skills, stay updated on industry trends, and advance your tech career. </p>
+            <div class="community_intro-call-to-action" style="margin: .5rem 0">
+               <a href="https://discord.gg/bVSmtqUP" class="">Yes! I'd like to join &rarr;</a>
+            </div>
+
+            <hr style="margin: 1rem 10">
+            <div class="flex row" style="margin: 1rem 0;">
+               <img src="/assets/young oti.PNG" alt="channel image" style="border-radius: 50%; height: 35px; width: 35px; margin: auto .8rem; outline: double; outline-offset: 4px;">
+               <h2>ProbleMatic &mdash; <a href="https://www.youtube.com/channel/UCwo1ilkg89L7CTHCAmC8bWA" style="font-weight: 300;">Youtube channel &rarr;</a></h2>
+            </div>
+            <p></p>
+            <div class="community_section-youtube">
+               <div class="video flex justify-start">
+                  <div 
+                     class="flex" 
+                     style="
+                        overflow: hidden; 
+                        max-width: 150px; 
+                        min-width: 150px; 
+                        margin-right: 1rem; 
+                        height: 5rem; 
+                        border: 1px solid black; 
+                        outline: 1px solid black; 
+                        outline-offset: 5px;  
+                        border-radius:5px;">
+                     <img src="/assets/yt1.PNG" alt="" style="width: 150%; transform: scale(1.1);">
+                  </div>
+                  <div class="meta h-10 w-6 flex col justify-start">
+                     <h3 class="title">I spent 5 days solving this HARD leetcode problem</h3>
+                     <div class="description">Walk with me as I take you on a journey to how I solved this interesting problem...kinda</div>
+                     <div class="community_intro-call-to-action" style="margin: .5rem 0">
+                        <a href="https://www.youtube.com/watch?v=WKhqCWB54Qg">Watch video &rarr;</a>
+                     </div>
+                  </div>
+               </div>                
+
+               <div class="video flex justify-start">
+                  <div class="flex" style="overflow: hidden; max-width: 150px; min-width: 150px; margin-right: 1rem; height: 5rem; border: 1px solid black; outline: 1px solid black; outline-offset: 5px;  border-radius:5px;">
+                     <img src="/assets/yt2.PNG" alt="" style="width: 150%; transform: scale(1.1);">
+                  </div>
+                  <div class="meta h-10 w-6 flex col justify-start">
+                     <h3 class="title">Javascript DATA TYPES and VARIABLES for absolute BEGINNERS</h3>
+                     <div class="description">If you have ever heard of or studied data types and i didn't make sense to you, check out my explanation</div>
+                     <div class="community_intro-call-to-action" style="margin: .5rem 0">
+                        <a href="https://www.youtube.com/watch?v=QO3iiAb1vfo&t=24s">Watch video &rarr;</a>
+                     </div>
+                  </div>
+               </div>                
+
+               <div class="video flex justify-start">
+                  <div class="flex" style="overflow: hidden; max-width: 150px; min-width: 150px; margin-right: 1rem; height: 5rem; border: 1px solid black; outline: 1px solid black; outline-offset: 5px;  border-radius:5px;">
+                     <img src="/assets/yt3.PNG" alt="" style="width: 150%; transform: scale(1.1);">
+                  </div>
+                  <div class="meta h-10 w-6 flex col justify-start">
+                     <h3 class="title">OPERATORS in Javascript</h3>
+                     <div class="description">learn about operators and how to use them like a superstar developer</div>
+                     <div class="community_intro-call-to-action" style="margin: .5rem 0">
+                        <a href="https://www.youtube.com/watch?v=h3Sozw_dwbM&t=1s">Watch video &rarr;</a>
+                     </div>
+                  </div>
+               </div>                
+            </div>
+         </div>         
+      </div>
+   </section>
+
    <section id = "contact" class="contact flex col relative">
       <div class="contact_text-bg absolute">
          <h1>Contact</h1>
@@ -262,12 +352,12 @@
          <div class="contact_form">
             <div class="contact_form_pills w-4 flex col justify-between">
                <div class="contact_form_pills_pill h-4">
-                  <i class="fa-solid fa-envelope" style="color: white; font-size: 1.5rem; margin:.5rem 0"></i>
+                  <i class="fa-solid fa-envelope" style="overflow: hidden; color: white; font-size: 1.5rem; margin:.5rem 0"></i>
                   <h2>Email</h2>
                   <h1>otonye.dev@gmail.com</h1>
                </div>
                <div class="contact_form_pills_pill h-4">
-                  <i class="fa-solid fa-phone" style="color: white; font-size: 1.5rem; margin:.5rem 0"></i>
+                  <i class="fa-solid fa-phone" style="overflow: hidden; color: white; font-size: 1.5rem; margin:.5rem 0"></i>
                   <h2>Phone</h2>
                   <h1>+234 810 598 8585</h1>
                </div>
