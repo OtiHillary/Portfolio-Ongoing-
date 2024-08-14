@@ -913,6 +913,7 @@ header {
     margin: 1.2rem 0;
     border: 0px;
     background-color: transparent;
+    justify-content: flex-start;
   }
   .hero_intro h1, .about_intro h1, .projects_intro h1, .contact_intro h1, .community_intro h1, .content_intro h1 {
     font-size: 2rem;
