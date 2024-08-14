@@ -1,5 +1,5 @@
 @media (max-width: 1000px) {
-  .about, .projects, .contact {
+  .hero, .about, .projects, .contact {
     flex-wrap: wrap;
   }
 }/*# sourceMappingURL=queries.css.map */
