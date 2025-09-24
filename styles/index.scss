@@ -80,10 +80,10 @@ a:hover, button:hover{
    background-color: black;
    color: white;
    text-decoration: none;
-   padding: 0.8rem 3rem;
+   padding: 0.8rem 5rem;
    width: fit-content;
    border-radius: 0.7rem;
-   margin: 0 1rem;
+   margin: 0 .5rem;
    outline: 3px solid rgba(0, 0, 255, 0);
    box-shadow: 5px 5px 0px rgb(128 128 128 / 46%);
    outline-offset: 1px;
@@ -93,8 +93,9 @@ a:hover, button:hover{
    display: flex;
    background-color: rgba(199, 199, 199, 0.26);
    color: black;
+   background: white;
    text-decoration: none;
-   padding: 0.8rem 3rem;
+   padding: 0.8rem 5rem;
    width: fit-content;
    border-radius: 0.7rem;
    border: 1.5px solid black;
@@ -414,9 +415,19 @@ a:hover, button:hover{
    }
 }
 
-header{
-   height: 100vh;
+header {
+  height: 100vh;
+  background: 
+    linear-gradient(to top, rgba(0, 0, 0, 0.6) 5%, rgba(255, 255, 255, 1) 90%),
+    url('/assets/bbg.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+//   color: white;
 }
+
+
+
 
 // MAIN SECTION //
 .hero, .content{
@@ -444,6 +455,10 @@ header{
       padding: 2rem 1rem;
       border-radius: 15px;
       backdrop-filter: blur(15px);
+
+      &-text{
+         color: white;
+      }
 
       &-call-to-action{
          height: fit-content;

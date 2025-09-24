@@ -79,11 +79,11 @@ a:hover, button:hover {
   background-color: black;
   color: white;
   text-decoration: none;
-  padding: 0.8rem 3rem;
+  padding: 0.8rem 5rem;
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 0.7rem;
-  margin: 0 1rem;
+  margin: 0 0.5rem;
   outline: 3px solid rgba(0, 0, 255, 0);
   box-shadow: 5px 5px 0px rgba(128, 128, 128, 0.46);
   outline-offset: 1px;
@@ -94,8 +94,9 @@ a:hover, button:hover {
   display: flex;
   background-color: rgba(199, 199, 199, 0.26);
   color: black;
+  background: white;
   text-decoration: none;
-  padding: 0.8rem 3rem;
+  padding: 0.8rem 5rem;
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 0.7rem;
@@ -413,6 +414,10 @@ a:hover, button:hover {
 
 header {
   height: 100vh;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 5%, rgb(255, 255, 255) 90%), url("/assets/bbg.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero, .content {
@@ -441,6 +446,9 @@ header {
   border-radius: 15px;
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
+}
+.hero_intro-text, .content_intro-text {
+  color: white;
 }
 .hero_intro-call-to-action, .content_intro-call-to-action {
   height: -moz-fit-content;
