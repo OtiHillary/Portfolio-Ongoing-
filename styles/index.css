@@ -414,7 +414,6 @@ a:hover, button:hover {
 
 header {
   height: 100vh;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 5%, rgb(255, 255, 255) 90%), url("/assets/bbg.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -424,6 +423,7 @@ header {
   overflow: hidden;
   position: relative;
   justify-content: center;
+  box-shadow: 1px 1px 1px #7a7a7a;
 }
 .hero_image, .content_image {
   z-index: 1;
@@ -437,18 +437,14 @@ header {
   height: 36rem;
 }
 .hero_intro, .content_intro {
-  min-height: 50vh;
   margin: auto 0 3rem;
   z-index: 1;
   border: 1px solid rgba(202, 202, 202, 0.8509803922);
   background-color: rgba(174, 166, 166, 0);
-  padding: 2rem 1rem;
+  padding: 5rem 3rem;
   border-radius: 15px;
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
-}
-.hero_intro-text, .content_intro-text {
-  color: white;
 }
 .hero_intro-call-to-action, .content_intro-call-to-action {
   height: -moz-fit-content;

@@ -417,9 +417,9 @@ a:hover, button:hover{
 
 header {
   height: 100vh;
-  background: 
-    linear-gradient(to top, rgba(0, 0, 0, 0.6) 5%, rgba(255, 255, 255, 1) 90%),
-    url('/assets/bbg.jpg') center/cover no-repeat;
+//   background: 
+//     linear-gradient(to top, rgba(0, 0, 0, 0.6) 5%, rgba(255, 255, 255, 1) 90%),
+//     url('/assets/bbg.jpg') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -434,6 +434,7 @@ header {
    overflow: hidden;
    position: relative;
    justify-content: center;   
+   box-shadow: 1px 1px 1px #7a7a7a;
    &_image{
       z-index: 1;
       width: 28rem;
@@ -447,17 +448,17 @@ header {
       height: 36rem;
    }
    &_intro{
-      min-height: 50vh;
+      // min-height: 50vh;
       margin: auto 0 3rem;
       z-index: 1;
       border: 1px solid #cacacad9;
       background-color: #aea6a600;
-      padding: 2rem 1rem;
+      padding: 5rem 3rem;
       border-radius: 15px;
       backdrop-filter: blur(15px);
 
       &-text{
-         color: white;
+         // color: white;
       }
 
       &-call-to-action{
